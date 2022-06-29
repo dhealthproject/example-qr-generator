@@ -1,0 +1,77 @@
+/**
+ * This file is part of dHealth dApps Framework shared under LGPL-3.0
+ * Copyright (C) 2022-present dHealth Network, All rights reserved.
+ *
+ * @package     dHealth dApps Framework
+ * @subpackage  Examples
+ * @author      dHealth Network <devs@dhealth.foundation>
+ * @license     LGPL-3.0
+ */
+/**
+ * Utilities
+ **/
+.h-26 { height: 26rem; }
+
+.shadow-2 {
+	border-top: 1px solid #f4f4f2;
+
+	-ms-box-shadow: 2px 2px 0 #adb8bf, 2px 0.10em 0 #96b6ca, 2px 6px 6px #96b6ca;
+	-moz-box-shadow: 2px 2px 0 #adb8bf, 2px 0.10em 0 #96b6ca, 2px 6px 6px #96b6ca;
+	-o-box-shadow: 2px 2px 0 #adb8bf, 2px 0.10em 0 #96b6ca, 2px 6px 6px #96b6ca;
+	-webkit-box-shadow: 2px 2px 0 #adb8bf, 2px 0.10em 0 #96b6ca, 2px 6px 6px #96b6ca;
+	box-shadow: 2px 2px 0 #adb8bf, 2px 0.10em 0 #96b6ca, 2px 6px 6px #96b6ca;
+
+	-ms-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+.dark .shadow-2 {
+	-ms-box-shadow: 2px 2px 0 #232527, 2px 0.1em 0 #191f23, 2px 6px 6px #272e33;
+	-moz-box-shadow: 2px 2px 0 #232527, 2px 0.1em 0 #191f23, 2px 6px 6px #272e33;
+	-o-box-shadow: 2px 2px 0 #232527, 2px 0.1em 0 #191f23, 2px 6px 6px #272e33;
+	-webkit-box-shadow: 2px 2px 0 #232527, 2px 0.1em 0 #191f23, 2px 6px 6px #272e33;
+  box-shadow: 2px 2px 0 #232527, 2px 0.1em 0 #191f23, 2px 6px 6px #272e33;
+}
+
+/**
+ * Keyframes
+ **/
+@keyframes transition-green {
+  0% { background-color: rgba(198,246,213,var(--bg-opacity)); opacity:1; }
+  22% { background-color: transparent; }
+  77% { background-color: rgba(198,246,213,var(--bg-opacity)); }
+  100% { background-color: transparent; }
+}
+
+@keyframes transition-orange {
+  0% { background-color: rgba(254,235,200,var(--bg-opacity)); opacity:1; }
+  22% { background-color: transparent; }
+  77% { background-color: rgba(254,235,200,var(--bg-opacity)); }
+  100% { background-color: transparent; }
+}
+
+@keyframes transition-red {
+  0% { background-color: rgba(254,215,215,var(--bg-opacity)); opacity:1; }
+  22% { background-color: transparent; }
+  77% { background-color: rgba(254,215,215,var(--bg-opacity)); }
+  100% { background-color: transparent; }
+}
+
+.transition-bg-green { animation-name: transition-green; animation-duration: 1000ms; animation-iteration-count: 1; animation-timing-function: ease-in-out; }
+.transition-bg-orange { animation-name: transition-orange; animation-duration: 1000ms; animation-iteration-count: 1; animation-timing-function: ease-in-out; }
+.transition-bg-red { animation-name: transition-red; animation-duration: 1000ms; animation-iteration-count: 1; animation-timing-function: ease-in-out; }
+
+.checked\:bg-blue-600:checked { background-color: #00f; }
+.checked\:right-0:checked { right: 0; }
+
+@media (min-height: 900px) {
+  .h-auto.xxl\:h-24 { height: 11rem; }
+  .xxl\:h-16 { height: 4rem; }
+  .xxl\:mt-10 { margin-top: 2.5rem; }
+  .xxl\:h-full { height: 100%; }
+  .xxl\:h-36 { height: 36rem; }
+  .xxl\:hidden { display: none; }
+  .xxl\:pl-20 { padding-left: 4rem; }
+}

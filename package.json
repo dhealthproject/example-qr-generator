@@ -1,0 +1,12 @@
+{
+  "name": "quick-transaction-qr",
+  "version": "1.0.1",
+  "author": "Grégory Saive <greg@ubc.digital>",
+  "scripts": {
+    "min": "sh build.sh",
+    "build": "npm run build"
+  },
+  "devDependencies": {
+    "minify": "7.0.1"
+  }
+}
