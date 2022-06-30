@@ -1,10 +1,11 @@
 {
-  "name": "quick-transaction-qr",
-  "version": "1.0.1",
-  "author": "Grégory Saive <greg@ubc.digital>",
+  "name": "@dhealthdapps/qr-generator",
+  "private": true,
+  "version": "1.0.0",
+  "author": "dHealth Foundation <devs@dhealth.foundation>",
   "scripts": {
     "min": "sh build.sh",
-    "build": "npm run build"
+    "build": "npm run min"
   },
   "devDependencies": {
     "minify": "7.0.1"

@@ -13,7 +13,14 @@ Showcase for Transaction QR Codes for dApps Development with [dHealth Network][p
 
 ## Install notes
 
-This small showcase webpage can be built using `sh build.sh` as attached to the source code.
+Install package dependencies and build the minified software source code with the following commands:
+
+```bash
+npm install
+sh build.sh
+```
+
+You can then open the `index.html` from your browser and start using this software.
 
 ## Getting help
 

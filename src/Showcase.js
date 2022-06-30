@@ -120,6 +120,7 @@ const setupUI = () => {
   for (let j = 0, m = togglers.length; j < m; j++) {
     togglers[j].addEventListener('click', (e) => {
       e.preventDefault();
+      createTransactionQR();
       let msel = e.target.getAttribute('data-toggle');
       View.toggleModal(msel);
     });
@@ -142,5 +143,4 @@ const setupUI = () => {
 window.YourDLT = {
   readNetwork,
   setupUI,
-  createTransactionQR,
 };

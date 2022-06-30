@@ -16,102 +16,65 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="resources/dhealth-sdk.pack-1.0.0.min.js"></script>
   <script src="resources/showcase.min.js?t=now"></script>
-
-  <script>
-    // document.addEventListener('DOMContentLoaded', (e) => {
-    //   let theme = 'light';
-    //   let mm = window.matchMedia('(prefers-color-scheme: dark)');
-    //   let mediaTheme = mm.matches?"dark":"";
-    //   console.log("mediaTheme: ", mediaTheme);
-    //   if (localStorage && localStorage.getItem && (theme = localStorage.getItem(
-    //     'yourdlt/theme'
-    //   )) !== null) {
-    //     const toggler = document.querySelector('[name="toggleTheme"]');
-    //     if ('dark' === theme) {
-    //       toggler.click();
-    //       toggler.setAttribute('checked', '');
-    //     }
-
-    //     // Initial theme update
-    //     document.querySelector('body').classList.add(theme);
-    //     document.documentElement.setAttribute("theme", mediaTheme);
-    //   }
-    // });
-  </script>
 </head>
-<body class="responsive bg-black">
+<body class="responsive bg-gray-300">
   <div class="min-h-screen grid grid-flow-row">
-    <div class="h-auto lg:h-56 2xl:h-64 border-b border-green-800">
-      <div class="lg:grid lg:grid-flow-col sm:grid sm:grid-flow-row text-center">
-        <div class="hidden md:block lg:block md:w-full sm:w-full text-2xl lg:text-lg xl:text-lg 2xl:text-lg text-black dark:text-white"
-          style="white-space: pre; font-family: Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace;">  ######  #     #                                    
-  #     # #     # ######   ####  #      ##### #    # 
-  #     # ####### #       #    # #        #   #    # 
-  #     # #     # #####   ###### #        #   ###### 
-  #     # #     # #       #    # #        #   #    # 
-  ######  #     # ######  #    # ######   #   #    # 
 
-Powered by Symbol from NEM and YourDLT</div>
-        <div class="hidden xl:grid lg:h-40 lg:items-center text-left mt-10 mb-10 lg:mx-auto">
-          <a class="flex text-blue-400 hover:text-blue-800" href="https://dhealth.network" target="_blank">
-            <svg class="mt-1 mr-1 h-4 w-4" rel="heroicon-external-link" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-            <span>Go to dHealth.Network</span>
-          </a>
-          <a class="flex text-blue-400 hover:text-blue-800" href="http://explorer.dhealth.cloud" target="_blank">
-            <svg class="mt-1 mr-1 h-4 w-4" rel="heroicon-globe" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <span>Go to blockchain explorer</span>
-          </a>
-          <a class="flex text-blue-400 hover:text-blue-800" href="https://gist.github.com/evias/a7ee733fbb7e97762474286ff7134808" target="_blank">
-            <svg class="mt-1 mr-1 h-4 w-4" rel="heroicon-document-report" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-            </svg>
-            <span>How to connect to the network</span>
-          </a>
-          <a class="flex text-blue-400 hover:text-blue-800" href="https://gist.github.com/evias/a411c0b7077ca183a3c108ff01cc8e66" target="_blank">
-            <svg class="mt-1 mr-1 h-4 w-4" rel="heroicon-terminal" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-            </svg>
-            <span>How to connect with symbol-cli</span>
-          </a>
-          <a class="flex text-blue-400 hover:text-blue-800" href="https://gist.github.com/evias/af784fa320efdc265bb69a5e4f38dec6" target="_blank">
-            <svg class="mt-1 mr-1 h-4 w-4" rel="heroicon-terminal" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-            </svg>
-            <span>Troubleshooting notes</span>
-          </a>
-        </div>
-        <div id="node-status" class="w-full grid items-center text-orange-400 text-lg lg:text-xl md:text-2xl mt-5 mb-2 md:mt-10 md:mb-10">
-          <div class="flex mx-2 lg:mx-10">
-            <!-- Logo -->
-            <div class="xxl:hidden animate__animated animate__rotateIn animate__slower">
-              <img class="h-8 w-8" src="resources/images/favicon.png" alt="dHealth Network" />
-            </div>
-          </div>
-        </div>
-      </div> <!-- /.grid-flow-col -->
+    <div class="w-full h-20">
+      <div class="w-96 h-15 mx-auto mt-5 pt-3 px-4">
+        <img src="resources/images/logo.dhealth.blue.png"
+          class="h-10 mx-auto" />
+      </div>
     </div>
 
-    <div class="h-26 xxl:h-36 xxl:mt-10 text-center overflow-y-scroll">
-        <div class="w-full h-full table-auto border-collapse text-base lg:text-base md:text-base text-black dark:text-white">
+    <div class="h-[26rem] md:h-[32rem] text-center">
+        <div class="w-full h-[26rem] md:h-[31rem] border-collapse text-base lg:text-base md:text-base text-black">
 
-          <div class="mt-10">
+          <div class="w-96 h-[26rem] mt-0 mx-auto py-3 px-4 rounded border border-gray-600 hover:border-blue-600">
+            <p>Welcome to this dApp with dHealth Network. Click the button below to generate your Transaction QR.</p>
+
+            <fieldset class="mt-10">
+              <legend class="text-left text-gray-600">Parameters</legend>
+
+              <div class="mt-2 lg:mt-0 text-bold text-sm md:text-xl py-3 px-4">
+                <select
+                  id="type-selector"
+                  class="mx-auto py-2 pl-3 pr-3 block bg-white w-full border border-slate-300 rounded-md shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                >
+                  <option value="claim" selected>Claim transaction</option>
+                </select>
+
+                <div rel="claim">
+                  <select
+                    id="dapp-selector"
+                    class="mx-auto py-2 pl-3 pr-3 block bg-white w-full border border-slate-300 rounded-md shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                  >
+                    <option value="dHealthTechChats">NDEV dHealth Tech Chats</option>
+                    <option value="dHealthClaimPool" selected>NDEV dHealth Claim Pool</option>
+                  </select>
+                  <input
+                    id="message-input"
+                    type="text" 
+                    class="mx-auto py-2 pl-3 pr-3 placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                    placeholder="I claim that I wish to receive dHealth's NFT." />
+              </div>
+            </fieldset>
+
             <button
               data-toggle="#modal-transaction-qr"
               class="animate__animated animate__backInDown mt-2 lg:mt-0 text-bold text-sm md:text-xl rounded py-3 px-4 cursor-pointer bg-white border border-gray-600 text-gray-600 hover:text-blue-600 hover:border-blue-600">Generate QR</button>
+
+            <p class="mt-5">Note that you will need to install <a href="#">dHealth Mobile Wallet</a> to scan a Transaction QR.</p>
           </div>
 
         </div>
     </div>
 
     <div class="w-full h-auto xxl:h-16 mb-5 mt-5 lg:mb-0 lg:mt-2 xxl:mt-10">
-      <div class="text-xs lg:text-sm md:text-base text-center text-black dark:text-white">
-    UBC:Digital Magazine, dHealth Monitor and other UBC Digital Sites are made with ♥ at Using Blockchain Ltd<br class="hidden lg:block md:block" />
-    Copyright © 2022 UBC Digital Sites for Using Blockchain Ltd, All Rights Reserved.<br />
-      <a class="text-blue-400 hover:text-blue-800" href="https://github.com/sponsors/UsingBlockchain" target="_blank">Github Sponsors</a> | <a class="text-blue-400 hover:text-blue-800" href="https://patreon.com/usingblockchainltd" target="_blank">Patreon</a> | <a class="text-blue-400 hover:text-blue-800" href="https://github.com/UsingBlockchain" target="_blank">Github</a> | <a class="text-blue-400 hover:text-blue-800" href="https://github.com/evias" target="_blank">Github Personal</a> | <a class="text-blue-400 hover:text-blue-800" href="https://ubc.digital" target="_blank">Web</a> | <a class="text-blue-400 hover:text-blue-800" href="https://evias.be" target="_blank">Web Shop</a>
+      <div class="text-xs lg:text-sm md:text-base text-center text-black">
+    This dApp is made with ♥ at dHealth Foundation<br class="hidden lg:block md:block" />
+    Copyright © 2022 dHealth Foundation, All Rights Reserved.<br />
+      <a class="text-blue-400 hover:text-blue-800" href="https://dhealth.com" target="_blank">Website</a> | <a class="text-blue-400 hover:text-blue-800" href="https://github.com/dhealthproject" target="_blank">Github</a> | <a class="text-blue-400 hover:text-blue-800" href="https://docs.dhealth.com" target="_blank">Documentation</a>
       </div>
     </div>
   </div> <!-- /.grid-flow-row -->
@@ -122,17 +85,18 @@ Powered by Symbol from NEM and YourDLT</div>
   <div id="modal-transaction-qr" class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
     <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
     <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
-      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-black dark:text-white text-sm z-50">
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-black text-sm z-50">
         <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
           <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
         </svg>
         <span class="text-sm">(Esc)</span>
       </div>
-      <!-- Add margin if you want to see some of the overlay behind the modal-->
-      <div class="modal-content py-4 text-left px-6">
+      <!-- add margin if you want to see some of the overlay behind the modal-->
+      <div class="modal-content py-4 text-center px-6">
         <div class="flex justify-between items-center pb-3">
           <p class="text-xl text-blue-800 text-bold">Scan Transaction QR</p>
           <div class="modal-close cursor-pointer z-50">
+            <!-- closing icon-->
             <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
               <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
             </svg>
@@ -158,7 +122,6 @@ document.addEventListener('DOMContentLoaded', () => {
     identityPublicKey: '5172C98BD61DF32F447C501DE8090A9D7096F9E71975D788D67F7A82B8C04EFA',
     nodePublicKey: '1448AE052B6D032B0CF4DC2B53B98C7A03FF2A4EF3781C9137F9857FD2D28E72',
   });
-  createTransactionQR();
 });
 </script>
 
